@@ -1,0 +1,79 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template Beamer Sugestivo para Projetos no Senac
+% by ezefranca.com
+% Based on MIT Beamer Template
+% As cores laranja e azul seguem o padrao proposto no manual de uso da identidade visual senac
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%\documentclass{beamer} %voce pode usar este modelo tambem
+\documentclass[handout,t]{beamer}
+\usepackage{graphicx,url}
+\usepackage[brazil]{babel}   
+\usepackage[utf8]{inputenc}
+\usepackage{graphics}
+\batchmode
+% \usepackage{pgfpages}
+% \pgfpagesuselayout{4 on 1}[letterpaper,landscape,border shrink=5mm]
+\usepackage{amsmath,amssymb,enumerate,epsfig,bbm,calc,color,ifthen,capt-of}
+\usetheme{Berlin}
+\usecolortheme{senac}
+
+%-------------------------Titulo/Autores/Orientador------------------------------------------------
+\title[]{Idea/Approach Details}
+\date{}
+\author[]{Ministry/ Organization name: Ministry of External Affairs \\Problem Statement: App for top ten OWASP vulnerabilities scan \\Team Name: ABHYUDAYA\\Team Leader Name: Gaurav Garg\\ College Code: U-0013}
+
+%-------------------------Logo na parte de baixo do slide------------------------------------------
+\pgfdeclareimage[height=0.9cm, keepaspectratio]{senac-logo}{logo.pdf}
+\logo{\pgfuseimage{senac-logo}\hspace*{0.5cm}}
+
+%-------------------------Este código faz o menuzinho bacana na parte superior do slide------------
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+\beamerdefaultoverlayspecification{<+->}
+% -----------------------------------------------------------------------------
+\begin{document}
+% -----------------------------------------------------------------------------
+
+%---Gerador de Sumário---------------------------------------------------------
+\frame{\titlepage}
+\section[]{}
+% \begin{frame}{Sumário}
+%   \tableofcontents
+% \end{frame}
+%---Fim do Sumário------------------------------------------------------------
+
+
+% -----------------------------------------------------------------------------
+\section{Idea / Approach details}
+\begin{frame}{Idea/Approach details}
+%introducao
+Describe your idea / Solution / Prototype here
+\\
+Describe your Technology stack here
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\section{Idea / Approach details}
+\begin{frame}{Idea / Approach details}
+%referencial teorico, estado da arte, etc
+Describe your Use Cases here
+Describe your Dependencies / Show stopper here
+\\
+(crucial data or software or hardware, without which you cannot create the final
+model/ product)
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+
+% -----------------------------------------------------------------------------
+\end{document}
+%-----------------------------------------------Este comentario nunca aparecera
